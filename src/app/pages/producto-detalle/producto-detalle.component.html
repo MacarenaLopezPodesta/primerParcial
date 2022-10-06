@@ -1,0 +1,49 @@
+<body>
+
+
+    <main role="main">
+  
+      <div class="jumbotron">
+        <div class="container">
+          <h2 class="display-3">LISTADO DE PRODUCTOS</h2>
+          <app-producto-listado    (productoSeleccionado)="tomarProductoParaDetalles($event)" ></app-producto-listado>
+
+
+        </div>
+      </div>
+  
+
+
+
+       
+      <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+
+          <div class="col-md-4">
+            <app-detalle-producto [unProd]="prodParaMostar"></app-detalle-producto>
+
+          </div>
+
+          <div class="col-md-4"><app-pais-porducto [detalleProd]="prodParaMostar"></app-pais-porducto>
+
+          </div>
+
+          
+
+        </div>
+        <hr>
+      </div> <!-- /container -->
+  
+
+  
+  
+     
+    <!-- Bootstrap core JavaScript
+      ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  
+
+
+
+
